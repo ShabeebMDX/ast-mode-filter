@@ -57,7 +57,7 @@ async def start(bot, cmd):
                 title = files.file_name
                 size=files.file_size
                 f_caption=files.caption
-                if CUSTOM_FILE_CAPTION:
+                if CUSTOM_FILE_CAPTION:@astormovies
                     try:
                         f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)
                     except Exception as e:
